@@ -18,5 +18,17 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
+
+        binding.btnMap.setOnClickListener{
+            val uri = Uri.parse("geo:0,0?z=17&q=경북 구미시 신시로 7길 22")
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
+
+        binding.btnTelephone.setOnClickListener{
+            val uri = Uri.parse("tel:010-4732-6821")
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
     }
 }
